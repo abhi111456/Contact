@@ -4,21 +4,27 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
-    background-color: hsl(148, 38%, 91%);
+    background-color:  hsl(148, 38%, 91%);
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .container {
     display: grid;
-    background-color:white;
+    background-color: white;
     grid-template-columns: 1fr;
     align-items: flex-start;
     padding: 20px;
     width: 100%;
     border-radius: 14px;
-    max-width:500px;
+    max-width: 500px;
     gap: 15px;
+}
+
+h1 {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .form-control {
@@ -37,6 +43,9 @@ body {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+    border: 1px solid #999999;
+    border-radius: 6px;
+    font-size: 14px;
 }
 
 .row {
@@ -48,10 +57,29 @@ body {
 .row .form-group {
     width: 100%;
 }
-label{
-    font-size: 14px;
+
+.input-with-radio {
+    position: relative;
 }
-input{
+
+.input-with-radio input[type="radio"] {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+.input-with-radio input[type="text"] {
+    padding-left: 34px;
+    justify-content: center;
+}
+
+label {
+    font-size: 14px;
+    font-family: inherit;
+}
+
+input {
     border-radius: 6px;
 }
 
@@ -60,20 +88,24 @@ input{
     height: 90px;
     box-sizing: border-box;
     border-radius: 6px;
- 
+    border: 1px solid #999999;
+    resize: none;
 }
 
 .form-control input[type="checkbox"] {
     margin-right: 10px;
+    font-family: inherit;
 }
 
 .form-control button {
-    padding: 10px 20px;
+    padding: 10px 30px;
     width: 100%;
     border-radius: 8px;
     color: white;
+    font-family: inherit;
     font-size: 14px;
     background-color: hsl(169, 82%, 27%);
+    border: none;
 }
 
 
