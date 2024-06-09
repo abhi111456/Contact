@@ -9,7 +9,11 @@ body {
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
 }
-
+.form-control input[type="text"]:focus,
+.form-control input[type="email"]:focus,
+.form-control textarea:focus {
+    outline: none;
+}
 .container {
     display: grid;
     background-color: white;
